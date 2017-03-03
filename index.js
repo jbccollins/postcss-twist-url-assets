@@ -9,6 +9,15 @@ var urlPattern = /url\(([^)]+)\)/;
 /**
  * @name twistUrlAssets
  * @description Build this documentation with "npm run doc"
+ * This is a small postcss plugin that will transform relative url paths.
+ * 
+ * My use case: 
+ * Some npm packages use relative urls in their css. This is fine and dandy until you 
+ * mash all your css together into one big file in some src directory and those relative 
+ * urls no longer point to where they're supposed to. To fix this we can copy the image 
+ * resources to a "dump" directory and change all the urls to be consistent and correct. 
+ * Yay.
+ *
  * @example <caption>Example usage of twistUrlAssets().</caption>
  * // Given: (style.css)
  * // .one {
@@ -75,7 +84,7 @@ var urlPattern = /url\(([^)]+)\)/;
  *   ...
  * })
  *
- * @param {string} newUrlPathPrefix - The prefix that will be appended to the generated image file. This will determine the path that the server uses to query for the image resource. eg "/static/images/dumped_assets"
+ * @param {string} newUrlPathPrefix - The prefix that will be prepended to the generated image file. This will determine the path that the server uses to query for the image resource. eg "/static/images/dumped_assets"
  * @param {string} dumpDirectoryPath - The place that you want to dump your image resorces. eg "/opt/path/to/static/images/dumped_assets"
  */
 module.exports = postcss.plugin('twistUrlAssets', function (newUrlPathPrefix, dumpDirectoryPath) {
