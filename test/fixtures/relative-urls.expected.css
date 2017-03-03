@@ -1,0 +1,10 @@
+body {
+  background: url("/prefix/dumped/relative-urls_dumped_turtle.jpg");
+  background: url("/prefix/dumped/relative-urls_dumped_turtle.gif");
+  background: url("/prefix/dumped/relative-urls_dumped_turtle.png");
+  background: url("/prefix/dumped/relative-urls_dumped_turtle.png");
+  background: url("/prefix/dumped/relative-urls_dumped_turtle.png");
+  /* Wacky relativity */
+  background: url("/prefix/dumped/relative-urls_dumped_turtle.png");
+  background-image: linear-gradient(transparent, transparent), url("/prefix/dumped/relative-urls_dumped_turtle.png");
+}

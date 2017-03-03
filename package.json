@@ -1,0 +1,23 @@
+{
+  "name": "postcss-twist-url-assets",
+  "version": "1.0.0",
+  "description": "Copies relatively accessed image resources to a specified folder and updates the output css to reflect the copied image paths.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/mocha",
+    "doc": "documentation build index.js -f md > README.md"
+  },
+  "author": "James Collins",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "postcss": "^5.2.4",
+    "underscore": "^1.8.3"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "devDependencies": {
+    "documentation": "^4.0.0-beta13",
+    "mocha": "^3.1.2"
+  }
+}

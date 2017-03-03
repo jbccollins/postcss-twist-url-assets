@@ -1,0 +1,10 @@
+body {
+  background: url("raw/turtle.jpg");
+  background: url("raw/turtle.gif");
+  background: url("raw/turtle.png");
+  background: url(raw/turtle.png);
+  background: url("../test/raw/turtle.png");
+  /* Wacky relativity */
+  background: url("../test/raw/../dumped/../raw/turtle.png");
+  background-image: linear-gradient(transparent, transparent), url("raw/turtle.png");
+}

@@ -1,0 +1,17 @@
+body {
+  background: url(http://one);
+  background: url(https://one);
+  background: url(ftp://one);
+  background: url(unknown://one);
+  background: url(/one);
+
+  background: url(http://one.jpg);
+  background: url(https://one.gif);
+  background: url(ftp://one.png);
+  background: url(unknown://one.svg);
+  background: url(/one.jpeg);
+
+  background: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7);
+
+  behavior:url(#default#VML);
+}
