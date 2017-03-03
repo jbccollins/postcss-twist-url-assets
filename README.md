@@ -2,13 +2,14 @@
 
 Build this documentation with "npm run doc"
 This is a small postcss plugin that will transform relative url paths.
-
 My use case: 
 Some npm packages use relative urls in their css. This is fine and dandy until you 
 mash all your css together into one big file in some src directory and those relative 
 urls no longer point to where they're supposed to. To fix this we can copy the image 
 resources to a "dump" directory and change all the urls to be consistent and correct. 
 Yay.
+
+![Travis CI Badge](https://travis-ci.org/jbccollins/postcss-twist-url-assets.svg?branch=master)
 
 **Parameters**
 
