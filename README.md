@@ -1,6 +1,7 @@
 # twistUrlAssets
 
-Build this documentation with "npm run doc"
+[![npm version](https://img.shields.io/npm/v/postcss-twist-url-assets.svg)](https://www.npmjs.com/package/postcss-twist-url-assets)
+![Travis CI Badge](https://travis-ci.org/jbccollins/postcss-twist-url-assets.svg?branch=master)
 
 This is a small postcss plugin that will transform relative url paths.
 My use case: 
@@ -10,7 +11,7 @@ urls no longer point to where they're supposed to. To fix this we can copy the i
 resources to a "dump" directory and change all the urls to be consistent and correct. 
 Yay.
 
-![Travis CI Badge](https://travis-ci.org/jbccollins/postcss-twist-url-assets.svg?branch=master)
+Build this documentation with "npm run doc"
 
 **Parameters**
 
